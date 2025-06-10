@@ -1,7 +1,7 @@
 function Label({label}) {
   return (
     <>
-      <label for="username">{label}</label>
+      <label htmlFor="username">{label}</label>
     </>
   );
 }

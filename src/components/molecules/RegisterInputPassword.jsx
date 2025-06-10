@@ -11,6 +11,7 @@ function RegisterInputPassword() {
             type="password"
             id="password"
             placeholder="Masukkan kata sandi"
+            autoComplete="current-password"
           />
           <i className="absolute top-2 right-3 w-3 h-2">
             <img src="/images/favicon/eye-splash-off.png" alt="" />
