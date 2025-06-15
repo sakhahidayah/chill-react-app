@@ -4,6 +4,9 @@ import RegisterInputUsername from "../molecules/RegisterInputUsername";
 import RegisterInputConfirm from "../molecules/RegisterInputConfirm";
 import ButtonRegister from "../molecules/ButtonRegister";
 function RegisterForm() {
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <>
       <div
@@ -12,7 +15,7 @@ function RegisterForm() {
       >
         <main className="bg-[#181a1ced] rounded-lg p-6 gap-5 min-w-[306px]">
           <Tittle children={"Daftar"} text={"Selamat datang!"} />
-          <form action="">
+          <form action="" onSubmit={handleSubmit}>
             <RegisterInputUsername />
             <RegisterInputPassword />
             <RegisterInputConfirm />

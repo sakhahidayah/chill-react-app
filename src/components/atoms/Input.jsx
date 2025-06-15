@@ -7,7 +7,7 @@ function Input({ type, id, placeholder }) {
         id={id}
         placeholder={placeholder}
         autoComplete="current-password"
-      />
+      /> 
     </>
   );
 }
