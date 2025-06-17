@@ -1,0 +1,125 @@
+{
+  "FilmContentFirst": [
+      {
+      "id": "1",
+      "judul": "Don't Look Up",
+      "image": "/images/movies/dont-look-up.png"
+    },
+      {
+      "id": "2",
+      "judul": "Blue Lock",
+      "image": "/images/movies/blue-lock.png"
+    },
+      {
+      "id": "3",
+      "judul": "Doctor Strange",
+      "image": "/images/movies/doctor-strange.png"
+    },
+      {
+      "id": "4",
+      "judul": "A man called otto",
+      "image": "/images/movies/called-oto.png"
+    },
+      {
+      "id": "5",
+      "judul": "Spiderman No Way Home",
+      "image": "/images/movies/nowayhome.jpg"
+    }
+  ],
+  "FilmContentSecond": [
+    {
+      "id": "1",
+      "judul": "Suzume",
+      "image": "/images/movies/suzume.png"
+    },
+    {
+      "id": "2",
+      "judul": "Sonic",
+      "image": "/images/movies/sonic.png"
+    },
+    {
+      "id": "3",
+      "judul": "Big Hero 6",
+      "image": "/images/movies/big-hero.png"
+    },
+    {
+      "id": "4",
+      "judul": "Jurrasic World",
+      "image": "/images/movies/jurasicworld.png"
+    },
+    {
+      "id": "5",
+      "judul": "All Of Us",
+      "image": "/images/movies/allofus.png"
+    },
+    {
+      "id": "6",
+      "judul": "Guardian of Galaxy",
+      "image": "/images/movies/guardian.png"
+    }
+  ],
+  "FilmContentThird": [
+    {
+      "id": "1",
+      "judul": "The Tomorrow War",
+      "image": "/images/movies/thetomorrow.png"
+    },
+    {
+      "id": "2",
+      "judul": "Ant-man",
+      "image": "/images/movies/quantumania.png"
+    },
+    {
+      "id": "3",
+      "judul": "Little Mermaid",
+      "image": "/images/movies/littlemermaid.png"
+    },
+    {
+      "id": "4",
+      "judul": "Avanger : Infinity War",
+      "image": "/images/movies/infinitywar.jpg"
+    },
+    {
+      "id": "5",
+      "judul": "Ponyo",
+      "image": "/images/movies/ghibli.jpg"
+    },
+    {
+      "id": "6",
+      "judul": "Fast and Furious",
+      "image": "/images/movies/fastandfurious.jpg"
+    }
+  ],
+  "FilmContentFourth": [
+    {
+      "id": "1",
+      "judul": "Duty after school",
+      "image": "/images/movies/dutyafter.png"
+    },
+    {
+      "id": "2",
+      "judul": "Frieren",
+      "image": "/images/movies/frieren.jpg"
+    },
+    {
+      "id": "3",
+      "judul": "The wind rises",
+      "image": "/images/movies/thewind.jpg"
+    },
+    {
+      "id": "4",
+      "judul": "Venom",
+      "image": "/images/movies/venom.jpg"
+    },
+    {
+      "id": "5",
+      "judul": "Squid-Game Season 2",
+      "image": "/images/movies/squidgame.jpg"
+    },
+    {
+      "id": "6",
+      "judul": "Jumbo",
+      "image": "/images/movies/jumbo.jpg"
+    }
+  ]
+}
