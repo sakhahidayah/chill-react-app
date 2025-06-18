@@ -14,14 +14,15 @@ const FilmContentFirst = forwardRef((props, ref) => {
       <div
         ref={ref}
         id="filmContainer"
-        className="flex flex-nowrap overflow-x-auto gap-4 scroll-smooth snap-x lg:overflow-x-hidden lg:min-w-full lg:gap-7"
+        className="flex flex-nowrap overflow-x-auto gap-4 scroll-smooth snap-x lg:overflow-x-hidden lg:min-w-full lg:gap-7 relative "
       >
         {films.map((film) => {
           return (
             <div
               key={film.id}
               style={{ backgroundImage: `url(${film.image})` }}
-              className="bg-cover bg-center rounded min-h-[151px] flex min-w-[300px] justify-between items-end p-4 snap-end"
+              
+              className="bg-cover bg-center rounded min-h-[151px] flex min-w-[300px] justify-between items-end p-4 snap-end cursor-pointer transition duration-300 ease-out-in transform hover:scale-90 "
             >
               <p className="font-bold text-sm leading-[140%] tracking-wide">
                 {film.judul}

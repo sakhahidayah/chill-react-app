@@ -21,7 +21,7 @@ const FilmContentFourth = forwardRef((props, ref) => {
             <div
               key={film.id}
               style={{ backgroundImage: `url(${film.image})` }}
-              className="min-w-24 h-36 bg-cover bg-center rounded pt-2 pl-2 lg:min-w-[234px] lg:min-h-[365px]"
+              className="min-w-24 h-36 bg-cover bg-center rounded pt-2 pl-2 lg:min-w-[234px] lg:min-h-[365px] transition duration-300 ease-out-in transform hover:scale-90 cursor-pointer"
             >
               <p className="bg-[#0F1E93] rounded-xl w-[55px] h-[14px] px-1 py-0.5 border-[0.5px] font-bold text-[6.74px] leading-[140%] border-[#0F1E93]">
                 Episode baru

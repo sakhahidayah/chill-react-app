@@ -1,6 +1,4 @@
-
 function DaftarContent() {
-  
   return (
     <>
       <div className="flex flex-col  items-center min-h-screen pl-20 pt-5">
