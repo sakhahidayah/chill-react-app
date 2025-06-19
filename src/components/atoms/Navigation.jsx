@@ -1,7 +1,7 @@
 function Navigation() {
   return (
     <>
-      <div className="flex justify-center items-center gap-4 lg:gap-10 font-medium text-[10px] leading-[140%] tracking-wide lg:min-w-[200px] ">
+      <div className=" flex justify-center items-center gap-4 lg:gap-10 font-medium text-[10px] leading-[140%] tracking-wide lg:min-w-[200px] ">
         <img
           src="/images/favicon/movie-open.png"
           alt=""

@@ -2,16 +2,21 @@ import React, { useEffect, useState, forwardRef } from "react";
 
 const FilmContentFourth = forwardRef((props, ref) => {
   const [films, setFilms] = useState([]);
+  const [details, setDetails] = useState(false);
+  const [selectedFilm, setSelectedFilm] = useState(null);
 
   useEffect(() => {
     fetch("/data/film.json")
       .then((response) => response.json())
-      .then((result) => setFilms(result.FilmContentFourth))
+      .then((result) => {
+        setFilms(result.FilmContentFourth);
+      })
       .catch((error) => console.error("Error:", error));
   }, []);
   return (
     <>
       <div
+        onClick={() => setDetails(!details)}
         ref={ref}
         id="rilisBaru"
         className="mt-5 flex flex-nowrap overflow-x-auto gap-4 scroll-smooth snap-center lg:min-w-full lg:gap-7 lg:overflow-x-hidden"
@@ -19,6 +24,10 @@ const FilmContentFourth = forwardRef((props, ref) => {
         {films.map((film) => {
           return (
             <div
+              onClick={() => {
+                setSelectedFilm(film);
+                setDetails(true);
+              }}
               key={film.id}
               style={{ backgroundImage: `url(${film.image})` }}
               className="min-w-24 h-36 bg-cover bg-center rounded pt-2 pl-2 lg:min-w-[234px] lg:min-h-[365px] transition duration-300 ease-out-in transform hover:scale-90 cursor-pointer"
@@ -30,6 +39,44 @@ const FilmContentFourth = forwardRef((props, ref) => {
           );
         })}
       </div>
+      {details && selectedFilm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-20">
+          <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md p-6">
+            <div className="flex flex-row items-center">
+              <img
+                src={selectedFilm.image}
+                alt={selectedFilm.judul}
+                className="rounded w-32 h-48 mb-4 object-cover"
+              />
+              <div className="flex flex-col ml-2">
+                <div className=" w-full flex justify-center">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                    {selectedFilm.judul}
+                  </h3>
+                </div>
+                <div className="">
+                  <p className="text-sm text-gray-600 mb-4 text-center">
+                    {selectedFilm.detail}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row gap-1">
+              <button
+                onClick={() => setDetails(false)}
+                className="inline-flex justify-center rounded-md bg-red-600 px-4 py-2 text-sm font-semibold text-white hover:bg-red-300 transition"
+              >
+                Close
+              </button>
+              <button
+                className="inline-flex justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-300 transition"
+              >
+                Tambah
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 });
