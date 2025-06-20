@@ -16,13 +16,23 @@ const FilmContentSecond = forwardRef((props, ref) => {
 
   const handleFilm = () => {
     let saveFilm = JSON.parse(localStorage.getItem("selectedFilm")) || [];
-    saveFilm.push(selectedFilm);
-    localStorage.setItem("selectedFilm", JSON.stringify(saveFilm));
-     Swal.fire({
-          title: "Success!!",
-          text: "Film berhasil ditambahkan 😁",
-          icon: "success",
-        });
+    const isFilmExist = saveFilm.some((film) => film.id === selectedFilm.id);
+
+    if (!isFilmExist) {
+      saveFilm.push(selectedFilm);
+      localStorage.setItem("selectedFilm", JSON.stringify(saveFilm));
+      Swal.fire({
+        title: "Success!!",
+        text: "Film berhasil ditambahkan!",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Oops!!",
+        text: "Film sudah ada didaftar!",
+        icon: "error",
+      });
+    }
   };
   return (
     <>
@@ -62,7 +72,7 @@ const FilmContentSecond = forwardRef((props, ref) => {
               <div className="flex flex-col ml-2">
                 <div className=" w-full flex justify-center">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    {selectedFilm.judul}
+                    Judul : {selectedFilm.judul}
                   </h3>
                 </div>
                 <div className="">

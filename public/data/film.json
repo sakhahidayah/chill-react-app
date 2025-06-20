@@ -3,26 +3,31 @@
     {
       "id": "1",
       "judul": "Don't Look Up",
+      "detail": "Film Don't Look Up menceritakan kisah dua astronom yang berusaha memperingatkan dunia tentang komet yang mendekat dan akan menghancurkan Bumi.",
       "image": "/images/movies/dont-look-up.png"
     },
     {
       "id": "2",
       "judul": "Blue Lock",
+      "detail": "Blue Lock adalah serial manga dan anime olahraga yang menceritakan kisah program pelatihan ekstrem yang diselenggarakan oleh Jepang untuk menciptakan striker terbaik di dunia. ",
       "image": "/images/movies/blue-lock.png"
     },
     {
       "id": "3",
       "judul": "Doctor Strange",
+      "detail": "Doctor Strange in the Multiverse of Madness dirilis di Indonesia pada tanggal 5 Mei 2022.Film ini menampilkan petualangan Doctor Strange dalam menghadapi kekacauan di Multiverse, termasuk bertemu dengan berbagai versi dirinya dan menghadapi ancaman dari Wanda Maximoff, yang kini menjadi Scarlet Witch. ",
       "image": "/images/movies/doctor-strange.png"
     },
     {
       "id": "4",
       "judul": "A man called otto",
+      "detail": "Film A Man Called Otto bercerita tentang seorang pria tua bernama Otto Anderson yang pemarah dan suka mengomel, setelah ditinggal mati istrinya. Ia merasa frustrasi dan mencoba bunuh diri, namun selalu gagal karena kehadiran tetangga baru yang ceria dan ramai, yang perlahan mengubah pandangannya tentang hidup.",
       "image": "/images/movies/called-oto.png"
     },
     {
       "id": "5",
       "judul": "Spiderman No Way Home",
+      "detail": "Spider-Man: No Way Home, yang tayang di Indonesia pada 15 Desember 2021, menceritakan Peter Parker yang identitasnya terungkap dan meminta bantuan Doctor Strange untuk menghapus ingatan semua orang.",
       "image": "/images/movies/nowayhome.jpg"
     }
   ],

@@ -4,7 +4,7 @@ function ButtonGoogle() {
   const swal = () => {
     Swal.fire({
       title: "Mohon maaf!",
-      text: "Fitur belum ditambahkan 😁",
+      text: "Fitur belum ditambahkan ",
       icon: "info",
     });
   };
