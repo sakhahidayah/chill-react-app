@@ -28,37 +28,37 @@
   ],
   "FilmContentSecond": [
     {
-      "id": "1",
+      "id": "6",
       "judul": "Suzume",
       "detail": "Film ini bercerita tentang seorang gadis remaja bernama Suzume yang melakukan perjalanan untuk menutup pintu-pintu yang membuka bencana di seluruh Jepang. ",
       "image": "/images/movies/suzume.png"
     },
     {
-      "id": "2",
+      "id": "7",
       "judul": "Sonic",
       "detail": " Sonic berusaha mengumpulkan Chaos Emeralds untuk menyelamatkan Tails dari Dr. Robotnik. Filmnya sendiri mengambil latar beberapa waktu setelah kejadian di film pertama",
       "image": "/images/movies/sonic.png"
     },
     {
-      "id": "3",
+      "id": "8",
       "judul": "Big Hero 6",
       "detail": "Film ini mengikuti seorang anak jenius bernama Hiro Hamada yang membentuk ikatan dengan robot perawatan bernama Baymax. Mereka bergabung dengan sekelompok teman untuk membentuk tim pahlawan super yang disebut Big Hero 6 dan mengungkap misteri di balik peristiwa tragis yang menimpa mereka.",
       "image": "/images/movies/big-hero.png"
     },
     {
-      "id": "4",
+      "id": "9",
       "judul": "Jurrasic World",
       "detail": "Jurassic World Dominion adalah film ketiga dalam trilogi Jurassic World dan film keenam dalam waralaba Jurassic Park secara keseluruhan. Film ini berlatar empat tahun setelah peristiwa Jurassic World: Fallen Kingdom.",
       "image": "/images/movies/jurasicworld.png"
     },
     {
-      "id": "5",
+      "id": "10",
       "judul": "All Of Us",
       "detail": "All of Us Are Dead adalah serial televisi Korea Selatan bergenre aksi horor zombie yang tayang di Netflix. Serial ini bercerita tentang sekelompok siswa sekolah menengah atas yang terperangkap di sekolah mereka saat wabah zombie menyebar.",
       "image": "/images/movies/allofus.png"
     },
     {
-      "id": "6",
+      "id": "11",
       "judul": "Guardian of Galaxy",
       "detail": "Guardians of the Galaxy Vol. 3 adalah film superhero Amerika tahun 2023 yang disutradarai oleh James Gunn. Film ini merupakan sekuel dari Guardians of the Galaxy (2014) dan Guardians of the Galaxy Vol. 2 (2017), serta film ke-32 dalam Marvel Cinematic Universe (MCU).",
       "image": "/images/movies/guardian.png"
@@ -66,37 +66,37 @@
   ],
   "FilmContentThird": [
     {
-      "id": "1",
+      "id": "12",
       "judul": "The Tomorrow War",
       "detail": "The Tomorrow War adalah film aksi fiksi ilmiah Amerika Serikat tahun 2021 yang disutradarai oleh Chris McKay. Film ini bercerita tentang invasi alien di masa depan yang menghancurkan sebagian besar populasi manusia.",
       "image": "/images/movies/thetomorrow.png"
     },
     {
-      "id": "2",
+      "id": "13",
       "judul": "Ant-man",
       "detail": "Film ini membawa keluarga Scott Lang ke Quantum Realm, sebuah dunia di luar ruang dan waktu yang dihuni oleh berbagai makhluk aneh. Di sana, mereka bertemu dengan Kang the Conqueror, seorang penjahat baru yang kuat dan ambisius. ",
       "image": "/images/movies/quantumania.png"
     },
     {
-      "id": "3",
+      "id": "14",
       "judul": "Little Mermaid",
       "detail": "Film The Little Mermaid adalah adaptasi live-action dari film animasi Disney tahun 1989 dengan judul yang sama. Film ini menceritakan kisah Ariel, seorang putri duyung muda yang jatuh cinta pada seorang pangeran manusia dan membuat perjanjian dengan penyihir laut jahat bernama Ursula untuk menjadi manusia.",
       "image": "/images/movies/littlemermaid.png"
     },
     {
-      "id": "4",
+      "id": "15",
       "judul": "Avanger : Infinity War",
       "detail": " Film ini menceritakan para pahlawan super dari Avengers dan Guardians of the Galaxy yang bekerja sama untuk menghentikan Thanos, seorang penjahat intergalaksi yang berusaha mengumpulkan Infinity Stones untuk membunuh setengah dari semua kehidupan di alam semesta. ",
       "image": "/images/movies/infinitywar.jpg"
     },
     {
-      "id": "5",
+      "id": "16",
       "judul": "Ponyo",
       "detail": "Ponyo adalah film animasi fantasi Jepang yang disutradarai oleh Hayao Miyazaki, dirilis pada tahun 2008. Film ini bercerita tentang seorang putri ikan mas bernama Brunhilde, yang lebih dikenal sebagai Ponyo, yang ingin menjadi manusia. Ia bertemu dengan seorang anak laki-laki bernama Sosuke dan mereka menjalin persahabatan yang kuat.",
       "image": "/images/movies/ghibli.jpg"
     },
     {
-      "id": "6",
+      "id": "17",
       "judul": "Fast and Furious",
       "detail": "Film Fast & Furious, atau dikenal juga dengan judul Cepat dan Marah dalam bahasa Indonesia, adalah sebuah waralaba film aksi yang berpusat pada balapan liar dan perampokan. Film ini dimulai pada tahun 2001 dengan judul The Fast and the Furious dan telah menghasilkan beberapa sekuel serta film pendek.",
       "image": "/images/movies/fastandfurious.jpg"
@@ -104,37 +104,37 @@
   ],
   "FilmContentFourth": [
     {
-      "id": "1",
+      "id": "18",
       "judul": "Duty after school",
       "detail": "Duty After School adalah serial drama Korea yang menceritakan kisah siswa SMA yang tiba-tiba dipaksa untuk menjalani pelatihan militer dan berperang melawan makhluk asing misterius yang menyerang dunia. ",
       "image": "/images/movies/dutyafter.png"
     },
     {
-      "id": "2",
+      "id": "19",
       "judul": "Frieren",
       "detail": "Frieren: Beyond Journey's End adalah anime fantasi petualangan yang menceritakan kisah Frieren, seorang elf penyihir yang telah hidup ribuan tahun. Setelah mengalahkan Raja Iblis bersama tim pahlawan, termasuk Himmel, Frieren memulai perjalanan baru untuk memahami makna kehidupan dan menghargai momen-momen kecil yang dia lewatkan selama ini.",
       "image": "/images/movies/frieren.jpg"
     },
     {
-      "id": "3",
+      "id": "20",
       "judul": "The wind rises",
       "detail": "The Wind Rises (風立ちぬ, Kaze Tachinu) adalah film animasi Jepang tahun 2013 yang disutradarai oleh Hayao Miyazaki, diproduksi oleh Studio Ghibli. Film ini merupakan drama sejarah semi-biografi yang berfokus pada Jiro Horikoshi, seorang insinyur aeronautika yang merancang pesawat tempur Mitsubishi A6M Zero yang digunakan oleh Kekaisaran Jepang selama Perang Dunia II.",
       "image": "/images/movies/thewind.jpg"
     },
     {
-      "id": "4",
+      "id": "21",
       "judul": "Venom",
       "detail": "Film Venom (2018) menceritakan tentang jurnalis investigasi bernama Eddie Brock yang terikat dengan symbiote alien bernama Venom. Akibatnya, Eddie mendapatkan kekuatan super dan menjadi musuh dari Carlton Drake, CEO Life Foundation, yang ingin menguasai symbiote lain.",
       "image": "/images/movies/venom.jpg"
     },
     {
-      "id": "5",
+      "id": "22",
       "judul": "Squid-Game Season 2",
       "detail": "Squid Game 2 akan tayang di Netflix mulai 26 Desember 2024. Musim kedua ini melanjutkan kisah Gi-hun setelah memenangkan Squid Game pertama dan bertekad untuk menghentikan permainan mematikan tersebut. Ia akan kembali berpartisipasi dalam permainan dengan tujuan mengungkap dalang di balik layar dan menghentikan permainan tersebut.",
       "image": "/images/movies/squidgame.jpg"
     },
     {
-      "id": "6",
+      "id": "23",
       "judul": "Jumbo",
       "detail": "Don (Prince Poetiray), anak gemuk yang sering diolok-olok dengan panggilan Jumbo ingin membalas perbuatan anak yang suka merundungnya, tapi sesosok arwah bernama Meri (Quinn Salman) meminta pertolongan Don untuk disatukan kembali dengan makam keluarganya yang dirusak.",
       "image": "/images/movies/jumbo.jpg"

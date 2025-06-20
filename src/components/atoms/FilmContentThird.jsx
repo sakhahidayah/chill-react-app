@@ -1,5 +1,5 @@
 import React, { useEffect, useState, forwardRef } from "react";
-
+import Swal from "sweetalert2";
 const FilmContentThird = forwardRef((props, ref) => {
   const [films, setFilms] = useState([]);
   const [details, setDetails] = useState(false);
@@ -13,7 +13,16 @@ const FilmContentThird = forwardRef((props, ref) => {
       })
       .catch((error) => console.error("Error:", error));
   }, []);
-
+  const handleFilm = () => {
+    let saveFilm = JSON.parse(localStorage.getItem("selectedFilm")) || [];
+    saveFilm.push(selectedFilm);
+    localStorage.setItem("selectedFilm", JSON.stringify(saveFilm));
+    Swal.fire({
+             title: "Success!!",
+             text: "Film berhasil ditambahkan 😁",
+             icon: "success",
+           });
+  };
   return (
     <>
       <div
@@ -68,7 +77,10 @@ const FilmContentThird = forwardRef((props, ref) => {
               >
                 Close
               </button>
-              <button className="inline-flex justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-300 transition">
+              <button
+                onClick={handleFilm}
+                className="inline-flex justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-300 transition"
+              >
                 Tambah
               </button>
             </div>
