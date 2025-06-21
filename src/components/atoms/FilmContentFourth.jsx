@@ -21,7 +21,7 @@ const FilmContentFourth = forwardRef((props, ref) => {
       saveFilm.push(selectedFilm);
       localStorage.setItem("selectedFilm", JSON.stringify(saveFilm));
       Swal.fire({
-        title: "Success!!",
+        title: "Berhasil!",
         text: "Film berhasil ditambahkan!",
         icon: "success",
       });

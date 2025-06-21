@@ -6,23 +6,35 @@ function DaftarContent() {
   const [details, setDetails] = useState(false);
   const [selectedFilm, setSelectedFilm] = useState(null);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setSelectedFilm({ ...selectedFilm, [name]: value });
+  };
+
   useEffect(() => {
     const films = JSON.parse(localStorage.getItem("selectedFilm")) || [];
     setSavedFilms(films);
   }, []);
   const updatedList = () => {
+    const updatedFilms = savedFilms.map((film) =>
+      film.id === selectedFilm.id ? selectedFilm : film
+    );
+    localStorage.setItem("selectedFilm", JSON.stringify(updatedFilms));
+    setSavedFilms(updatedFilms);
+    setDetails(false);
     Swal.fire({
-        title: "warning",
-        text: "Fitur belum dikembangkan",
-        icon: "warning",
-      });
-  }
+      title: "Disimpan!",
+      text: "Film berhasil diperbarui.",
+      icon: "success",
+    });
+  };
+
   const deleteFilm = () => {
     if (savedFilms.length !== 0) {
       localStorage.removeItem("selectedFilm");
       setSavedFilms([]);
       Swal.fire({
-        title: "Success!!",
+        title: "Dihapus!",
         text: "Film berhasil dihapus!",
         icon: "success",
       });
@@ -42,7 +54,7 @@ function DaftarContent() {
     setSavedFilms(updatedFilms);
     setDetails(false);
     Swal.fire({
-      title: "Deleted!",
+      title: "Dihapus!",
       text: "Film berhasil dihapus.",
       icon: "success",
     });
@@ -102,6 +114,8 @@ function DaftarContent() {
                   <input
                     value={selectedFilm.judul}
                     type="text"
+                    name="judul"
+                    onChange={handleChange}
                     className="border border-slate-400 px-4 py-2"
                   />
                   <label htmlFor="" className="">
@@ -109,8 +123,8 @@ function DaftarContent() {
                   </label>
                   <textarea
                     value={selectedFilm.detail}
-                    name=""
-                    id=""
+                    name="detail"
+                    onChange={handleChange}
                     className="border border-slate-500 px-4 py-2 "
                   ></textarea>
                 </form>
@@ -129,7 +143,10 @@ function DaftarContent() {
               >
                 Hapus
               </button>
-              <button onClick={updatedList} className="inline-flex justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-300 transition">
+              <button
+                onClick={updatedList}
+                className="inline-flex justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-300 transition"
+              >
                 Simpan
               </button>
             </div>
