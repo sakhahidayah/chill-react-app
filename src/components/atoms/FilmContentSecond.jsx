@@ -1,19 +1,23 @@
 import React, { useEffect, useState, forwardRef } from "react";
 import Swal from "sweetalert2";
+import axios, { Axios } from "axios";
 const FilmContentSecond = forwardRef((props, ref) => {
   const [films, setFilms] = useState([]);
   const [details, setDetails] = useState(false);
   const [selectedFilm, setSelectedFilm] = useState(null);
+  const api_url = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    fetch("/data/film.json")
-      .then((response) => response.json())
-      .then((result) => {
-        setFilms(result.FilmContentSecond);
+    axios
+      .get(`${api_url}/movies`)
+      .then((response) => {
+        console.log(response.data);
+        setFilms(response.data)
       })
-      .catch((error) => console.error("Error:", error));
-  }, []);
-
+      .catch((error) => {
+        console.error("error fetching : films", error);
+      });
+  }, [api_url]);
   const handleFilm = () => {
     let saveFilm = JSON.parse(localStorage.getItem("selectedFilm")) || [];
     const isFilmExist = saveFilm.some((film) => film.id === selectedFilm.id);
@@ -42,7 +46,7 @@ const FilmContentSecond = forwardRef((props, ref) => {
         id="topRating"
         className="mt-5 flex flex-nowrap overflow-x-auto gap-4 scroll-smooth snap-center snap-x lg:min-w-full lg:gap-7 lg:overflow-x-hidden relative group"
       >
-        {films.map((film) => {
+        {films.slice(0,6).map((film) => {
           return (
             <div
               onClick={() => {
@@ -66,18 +70,18 @@ const FilmContentSecond = forwardRef((props, ref) => {
             <div className="flex flex-row items-center">
               <img
                 src={selectedFilm.image}
-                alt={selectedFilm.judul}
+                alt={selectedFilm.title}
                 className="rounded w-32 h-48 mb-4 object-cover"
               />
               <div className="flex flex-col ml-2">
                 <div className=" w-full flex justify-center">
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    Judul : {selectedFilm.judul}
+                    Judul : {selectedFilm.title}
                   </h3>
                 </div>
                 <div className="">
                   <p className="text-sm text-gray-600 mb-4 text-center">
-                    {selectedFilm.detail}
+                    {selectedFilm.desc}
                   </p>
                 </div>
               </div>

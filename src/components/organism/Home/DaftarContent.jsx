@@ -103,7 +103,7 @@ function DaftarContent() {
             <div className="flex flex-row items-center">
               <img
                 src={selectedFilm.image}
-                alt={selectedFilm.judul}
+                alt={selectedFilm.title}
                 className="rounded w-32 h-48 mb-4 object-cover"
               />
               <div className=" ml-5 text-slate-400">
@@ -112,9 +112,9 @@ function DaftarContent() {
                     Judul
                   </label>
                   <input
-                    value={selectedFilm.judul}
+                    value={selectedFilm.title}
                     type="text"
-                    name="judul"
+                    name="title"
                     onChange={handleChange}
                     className="border border-slate-400 px-4 py-2"
                   />
@@ -122,8 +122,8 @@ function DaftarContent() {
                     Sinopsis
                   </label>
                   <textarea
-                    value={selectedFilm.detail}
-                    name="detail"
+                    value={selectedFilm.desc}
+                    name="desc"
                     onChange={handleChange}
                     className="border border-slate-500 px-4 py-2 "
                   ></textarea>
