@@ -12,12 +12,13 @@ const FilmContentSecond = forwardRef((props, ref) => {
       .get(`${api_url}/movies`)
       .then((response) => {
         console.log(response.data);
-        setFilms(response.data)
+        setFilms(response.data);
       })
       .catch((error) => {
         console.error("error fetching : films", error);
       });
   }, [api_url]);
+
   const handleFilm = () => {
     let saveFilm = JSON.parse(localStorage.getItem("selectedFilm")) || [];
     const isFilmExist = saveFilm.some((film) => film.id === selectedFilm.id);
@@ -46,7 +47,7 @@ const FilmContentSecond = forwardRef((props, ref) => {
         id="topRating"
         className="mt-5 flex flex-nowrap overflow-x-auto gap-4 scroll-smooth snap-center snap-x lg:min-w-full lg:gap-7 lg:overflow-x-hidden relative group"
       >
-        {films.slice(0,6).map((film) => {
+        {films.slice(0, 6).map((film) => {
           return (
             <div
               onClick={() => {
