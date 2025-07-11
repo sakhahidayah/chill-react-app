@@ -1,44 +1,19 @@
 import React, { useEffect, useState, forwardRef } from "react";
-import Swal from "sweetalert2";
-import axios, { Axios } from "axios";
+import filmsStore from "../../stores/store";
+
 const FilmContentSecond = forwardRef((props, ref) => {
-  const [films, setFilms] = useState([]);
+  const { films, fetchFilms, addFilm } = filmsStore();
   const [details, setDetails] = useState(false);
   const [selectedFilm, setSelectedFilm] = useState(null);
-  const api_url = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
-    axios
-      .get(`${api_url}/movies`)
-      .then((response) => {
-        console.log(response.data);
-        setFilms(response.data);
-      })
-      .catch((error) => {
-        console.error("error fetching : films", error);
-      });
-  }, [api_url]);
+    fetchFilms();
+  }, [fetchFilms]);
 
   const handleFilm = () => {
-    let saveFilm = JSON.parse(localStorage.getItem("selectedFilm")) || [];
-    const isFilmExist = saveFilm.some((film) => film.id === selectedFilm.id);
-
-    if (!isFilmExist) {
-      saveFilm.push(selectedFilm);
-      localStorage.setItem("selectedFilm", JSON.stringify(saveFilm));
-      Swal.fire({
-        title: "Berhasil!",
-        text: "Film berhasil ditambahkan!",
-        icon: "success",
-      });
-    } else {
-      Swal.fire({
-        title: "Oops!!",
-        text: "Film sudah ada didaftar!",
-        icon: "error",
-      });
-    }
+    addFilm(selectedFilm);
   };
+
   return (
     <>
       <div
@@ -50,7 +25,8 @@ const FilmContentSecond = forwardRef((props, ref) => {
         {films.slice(0, 6).map((film) => {
           return (
             <div
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 setSelectedFilm(film);
                 setDetails(true);
               }}
@@ -65,6 +41,7 @@ const FilmContentSecond = forwardRef((props, ref) => {
           );
         })}
       </div>
+
       {details && selectedFilm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-20">
           <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md p-6">
