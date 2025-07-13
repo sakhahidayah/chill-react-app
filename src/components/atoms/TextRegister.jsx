@@ -1,10 +1,10 @@
 function TextRegister() {
   return (
     <>
-      <div class="flex flex-row justify-between mb-5">
-        <p class="font-normal text-[#C1C2C4] text-[9px]">
+      <div className="flex flex-row justify-between mb-5">
+        <p className="font-normal text-[#C1C2C4] text-[9px]">
           Sudah punya akun?
-          <a href="/login" class="text-white">
+          <a href="/login" className="text-white">
             Masuk
           </a>
         </p>

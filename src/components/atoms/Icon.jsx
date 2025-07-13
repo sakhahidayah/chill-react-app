@@ -1,4 +1,15 @@
+import { useEffect, useState } from "react";
+
 function Icon() {
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    const storedUsername = localStorage.getItem("username");
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
+  }, []);
+
   return (
     <>
       <div className="relative group lg:w-20 lg:h-10">
@@ -8,7 +19,7 @@ function Icon() {
             alt=""
             className="w-5 h-5 lg:w-10 lg:h-10 rounded-full"
           />
-          <a href="" className="group relative lg:w-7 lg:h-7">
+          <a href="#" className="group relative lg:w-7 lg:h-7">
             <i className="fas fa-angle-down "></i>
           </a>
         </button>
@@ -17,13 +28,13 @@ function Icon() {
             href="#"
             className="px-[12px] py-2 text-[#3254FF] hover:bg-slate-600 flex flex-row justify-center items-center font-medium text-[10px] leading-[140%] tracking-wide gap-1 lg:text-sm"
           >
-            <i className="fas fa-user-alt mr-1"></i> Profile Saya
+            <i className="fas fa-user-alt mr-1"></i> {username}
           </a>
           <a
             href="#"
             className="px-[12px] py-2 hover:bg-slate-600 flex flex-row justify-center items-center font-medium text-[10px] leading-[140%] tracking-wid lg:text-sm"
           >
-            <i className="fas fa-star mr-1"></i> Ubah Premium
+            <i className="fas fa-star mr-1"></i> Premium {username}
           </a>
           <a
             href="/login"
